@@ -12,7 +12,7 @@ Unless otherwise noted, each of the recipes below will install under
     # Equivalent to: ./ocamlbrew -a
     # This is the default when using ocamlbrew-install, so it's not
     # necessary to specify $OCAMLBREW_FLAGS.
-    curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash
+    curl -kL https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew-install | bash
 
 ### Latest OCaml trunk, findlib, odb.ml
 
@@ -20,28 +20,28 @@ Unless otherwise noted, each of the recipes below will install under
     # Specify that we want to pull from Subversion trunk and we only want
     # OCaml, findlib, and odb.ml
     export OCAMLBREW_FLAGS="-t -f"
-    curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash
+    curl -kL https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew-install | bash
 
 ### OCaml 3.12.1 release version, no other tools
 
     # Equivalent to: ./ocamlbrew -s release/3.12.1 -o
     # Specify an explicit Subversion path to pull from and we want OCaml only
     export OCAMLBREW_FLAGS="-s release/3.12.1 -o"
-    curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash
+    curl -kL https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew-install | bash
 
 ### Install to a custom brew root
 
     # Build and install under /opt/ocamlbrew
     export OCAMLBREW_BASE=/opt/ocamlbrew
     # Equivalent to: ./ocamlbrew -a
-    curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash
+    curl -kL https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew-install | bash
 
 ### Install OCaml trunk to a full customized directory
 
     # Build and install under /opt/ocamlbrew/
     # Equivalent to: ./ocamlbrew -t -f -b /opt/ocamlbrew -n trunk
     export OCAMLBREW_FLAGS="-t -f -b /opt/ocamlbrew -n trunk"
-    curl -kL https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew-install | bash
+    curl -kL https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew-install | bash
 
 ### Download ocamlbrew and run it locally
 
@@ -50,7 +50,7 @@ install each available package.
 
     # Download...
     cd /tmp
-    curl -O https://raw.github.com/hcarty/ocamlbrew/master/ocamlbrew
+    curl -O https://raw.github.com/edmcman/ocamlbrew/script/ocamlbrew
     # ... and run, optionally configuring the environment first
     bash ocamlbrew
 
